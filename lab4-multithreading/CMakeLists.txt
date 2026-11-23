@@ -1,0 +1,8 @@
+add_executable(lab4_server server.cpp)
+target_link_libraries(lab4_server PRIVATE ws2_32)
+add_executable(lab4_client client.cpp)
+target_link_libraries(lab4_client PRIVATE ws2_32)
+add_executable(lab4_critical_section critical_section.cpp)
+add_executable(lab4_mutex mutex.cpp)
+add_executable(lab4_event event.cpp)
+add_executable(lab4_semaphore semaphore.cpp)
